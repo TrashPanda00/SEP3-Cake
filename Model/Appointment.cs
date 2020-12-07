@@ -1,13 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SEP3.Model
 {
     public class Appointment
-    {
-        public int patientId { get; set; }
-        public int doctorId { get; set; }
-        public DateTime appointmentTime { get; set; }
-        public DateTime appointmentDate { get; set; }
-        public string summary { get; set; }
-    }
+        {
+            public string Subject { get; set; }
+            public DateTime StartTime { get; set; }
+            public DateTime EndTime { get; set; }
+            public int patientID { get; set; }
+            public int doctorID { get; set; }
+        }
 }
